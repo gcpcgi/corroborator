@@ -1,0 +1,23 @@
+<div style="text-align:center">
+  <h1>
+    Let's Upload Data!
+  </h1>
+</div>
+
+<div>
+  <mat-form-field>
+    <label for="file">Choose File</label>
+    <input type="file" id="file"
+           (change)="handleFileInput($event.target.files)">
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+  </mat-form-field>
+</div>
+
+<div>
+  <button mat-raised-button color="warn" (click)="processFileData()">Process</button>
+</div>
