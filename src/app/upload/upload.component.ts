@@ -21,12 +21,11 @@ export class UploadComponent implements OnInit {
   }
 
   processFileData() {
-    this.router.navigate(['/result-details']);
-    /* this.rest.uploadFile(this.fileToUpload).subscribe((result) => {
+    this.rest.uploadFile(this.fileToUpload).subscribe((result) => {
       this.router.navigate(['/result-details/']);
     }, (err) => {
       console.log(err);
-    }); */
+    });
   }
 
 }
